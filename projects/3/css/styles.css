@@ -1,0 +1,165 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+/*HEADER TEXT*/
+header {
+    background-color: rgb(55, 55, 117);
+    padding: 15px;
+    text-align: center;
+    font-family: 'Smooch Sans';
+}
+
+header h1 {
+    color: white;
+    font-family: 'Smooch Sans', sans-serif;
+    font-weight: 700;
+}
+
+hr {
+    border-color: rgb(55, 55, 117);
+}
+
+.wide {
+    border-color: transparent;
+    border-top: 4px solid rgb(55, 55, 117);
+}
+
+.signup {
+    text-align: center;
+}
+
+.inputColumn label, .othertopics label {
+    margin-bottom: 3px;
+    margin-top: 1rem;
+}
+
+.inputRow label {
+    margin-left: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    background: lightgrey;
+
+}
+
+input:focus, textarea:focus {
+    outline: none !important;
+    border: 1px solid grey;
+}
+
+input::placeholder {
+    text-align: right;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='20' viewBox='0 0 10 10' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M4 4 L 0 4 L2 2 Z'/><path d='M4 5 L0 5 L2 7 Z'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 50%;
+}
+
+textarea {
+    resize: none;
+}
+
+select:active, select:focus {
+    outline: none;
+}
+
+.inputRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.inputColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.othertopics {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: #38B4C1;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #28C0C6;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+    margin: 2rem 0;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 0 20px;
+}
+
+/*COPYRIGHT*/
+.copy {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Smooch Sans';
+    color: lightgrey;
+    padding: 20px;
+
+}
+
+#zipcode {
+    min-width: 50%;
+    max-width: 50%;
+}
+
+/*MEDIAQUERIES*/
+
+@media (min-width: 768px) {
+
+    form {
+        margin: auto;
+        max-width: 600px;
+    }
+
+    .inputColumn {
+        margin-top: 1rem;
+        flex-direction: row;
+    }
+
+    .inputColumn label {
+        flex: 1;
+        max-width: 8rem;
+    }
+
+    #zipcode {
+        min-width: 25%;
+        max-width: 25%;
+    }
+
+}

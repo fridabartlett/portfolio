@@ -1,0 +1,112 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  background: #eee;
+  padding: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #00000044;
+}
+
+.modal {
+  width: 375px;
+  margin: 15% auto auto;
+  position: relative;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #778;
+  border-radius: 5px;
+  padding: 30px 20px;
+  text-align: center;
+
+}
+
+.modal hr {
+  border-color: #fefefe;
+
+}
+
+.modal p {
+  color: grey;
+  font-size: 20px;
+}
+
+.modal .email {
+  text-align: center;
+
+}
+
+.modal .address {
+  text-align: center;
+}
+
+.modal-close {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;  
+}
+
+.hidden {
+  display: none;
+}
+
+.grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.card {
+  font-size: 16px;
+  background: white;
+  color: #737373;
+  padding: 1rem;
+  border: 1px solid darkgrey;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+h1 {
+  margin: 10px 0 30px 10px;
+  text-transform: uppercase;
+  text-align: left;
+
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 2px solid;
+  width: 130px;
+  height: 130px;
+  margin-right: 20px;
+}
+
+.email {
+  margin: 0 0 10px;
+  text-align: left;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  color: #8e8e8e;
+
+}
+
+.address {
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  color: #8e8e8e;
+
+}

@@ -1,0 +1,50 @@
+
+
+@mixin lighten-background($bg) {
+    &:hover {
+        background-color: lighten($bg, 15%);
+        transition: background-color 0.5s;
+    }
+}
+.btn {
+    margin-top: 15px;
+    width: 100%;
+    color: $color-accent;
+    border: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+
+    @media (min-width: $breakpoint-tablet) {
+        +.btn {
+            margin-left: 10px;
+        }
+
+        padding: 10px 30px;
+    }
+}
+
+.default {
+    @include lighten-background($color-text);
+    background-color: $color-text;
+}
+
+.error {
+    @include lighten-background(#e4757a);
+    background-color: #e4757a;
+}
+
+.info {
+    @include lighten-background(#927bc1);
+    background-color: #927bc1;
+}
+
+.success {
+    @include lighten-background(#63cc82);
+    background-color: #63cc82;
+}
+
+.warning {
+    @include lighten-background(#fd7856);
+    background-color: #fd7856;
+}

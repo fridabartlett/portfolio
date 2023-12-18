@@ -1,0 +1,175 @@
+.row {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 10px;
+}
+
+.container {
+  padding: 0 10px;
+
+  @media (min-width: $breakpoint-tablet) {
+    max-width: 1400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 10px;
+
+  @media (min-width: $breakpoint-tablet) {
+    flex-direction: row;
+  }
+}
+
+[class^=col] {
+  margin-top: 10px;
+  flex-basis: 100%;
+  min-height: 25px;
+  padding: 10px;
+  border-radius: 5px;
+
+  @media (min-width: $breakpoint-tablet) {
+    +[class^=col] {
+      margin-left: 10px;
+    }
+
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    align-items: center;
+  }
+}
+
+.col-1 {
+  &.theme {
+    background-color: #927bc1;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    flex-basis: 8.33%;
+  }
+}
+
+.col-2 {
+  &.theme {
+    background-color: #fd7856;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    flex-basis: 16.67%;
+  }
+}
+
+.col-3 {
+  &.theme {
+    background: #deb2ee;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    flex-basis: 25.00%;
+  }
+}
+
+.col-4 {
+  &.theme {
+    background-color: #7ee6fd;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    flex-basis: 33.33%;
+  }
+}
+
+.col-5 {
+  &.theme {
+    background-color: #88d9a0;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    flex-basis: 41.67%;
+  }
+}
+
+.col-6 {
+  &.theme {
+    background-color: #4da2bb;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    flex-basis: 50.00%;
+  }
+}
+
+.col-7 {
+  &.theme {
+    background-color: #ec9fa3;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    flex-basis: 58.33%;
+  }
+}
+
+.col-8 {
+  &.theme {
+    background-color: #fd9f85;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    flex-basis: 66.67%;
+  }
+}
+
+.col-9 {
+  &.theme {
+    background-color: #e4757a;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    flex-basis: 75.00%
+  }
+}
+
+.col-10 {
+  &.theme {
+    background-color: #63cc82;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    flex-basis: 83.33%;
+  }
+}
+
+.col-11 {
+  &.theme {
+    background-color: #51ddfc;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    flex-basis: 91.67%;
+  }
+}
+
+.col-12 {
+  &.theme {
+    background-color: #80e8d1;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    flex-basis: 100%;
+  }
+}
+
+.card {
+  flex-basis: 100%;
+}
