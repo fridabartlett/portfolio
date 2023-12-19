@@ -194,22 +194,33 @@ footer {
 }
 
 .modal {
-    width: 375px;
-    margin: 15% auto auto;
+    width: calc(100% - 40px);
+    height: calc(100% - 60px);
     position: relative;
     text-align: center;
     background: #fff;
-    border: 1px solid #778;
-    border-radius: 5px;
     padding: 30px 20px;
-    text-align: center;
-
 }
 
 .modal .screenshot {
-    width: 250px;
+    width: 80%;
     height: auto;
+    margin-top: 20px;
     flex-shrink: 0;
+}
+
+@media (min-width:768px) {
+    .modal {
+        width: 375px;
+        height: auto;
+        margin: 15% auto auto;
+        border: 1px solid #778;
+        border-radius: 5px;
+    }
+
+    .modal .screenshot {
+        width: 250px;
+    }
 }
 
 .modal hr {
